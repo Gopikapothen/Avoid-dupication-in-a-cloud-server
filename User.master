@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="User" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="mainstyle.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 117px;
+            width: 10px;
+        }
+       
+        </style>
+</head>
+<body style="background-color: #f8f8ff; height: 631px;">
+    <form id="form1" runat="server" style="background-color: #f8f8ff; height: 630px;">
+    <div>
+    <table style="width: 1350px; height: 77px; background-color: #f8f8ff;">
+        <tr>
+            <td align="center" style="font-size: x-large; color: #f8f8ff;">
+                Auditing by a third party to eliminate duplication in a central cloud server
+            </td>
+        </tr>
+    </table>
+         <table style="width: 1350px; height: 16px; background-color: #00008b;">
+        <tr>
+            <td align="center">
+               
+            </td>
+        </tr>
+    </table>
+        <table style="height: 284px; width: 240px">
+            <tr>
+                <td style="vertical-align: top">
+                    <fieldset style="height: 310px; width: 204px">
+                        <legend>
+                            Options
+                        </legend>
+                        <table style="height: 289px; width: 187px">
+                             <tr>
+                                <td style="background-color: #f8f8ff">
+                                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/userhome.aspx" ForeColor="Maroon">Home</asp:HyperLink>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="background-color: #f8f8ff">
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/userupload.aspx" ForeColor="Maroon">Upload File</asp:HyperLink>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td style="background-color: #f8f8ff">
+                                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/viewimage.aspx" ForeColor="Maroon">View Owner File </asp:HyperLink>
+                                </td>
+                           
+                              
+                            
+                             <tr>
+                                <td style="background-color: #f8f8ff">
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/index.aspx" ForeColor="Maroon">Logout</asp:HyperLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+                <td class="auto-style1" style="vertical-align: top; background-color: #f8f8ff;">
+                    <div style="width: 684px">
+                        <marquee>
+                            Welcome User!!!
+                        </marquee>
+                    </div>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
